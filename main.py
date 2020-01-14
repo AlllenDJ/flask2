@@ -19,4 +19,5 @@ def contact():
   return render_template('contact.html', phone = "123")
 
 if __name__ == '__main__':
+  app.run(host='0.0.0.0')
   app.run(threaded=True, port=5050, debug=True)
